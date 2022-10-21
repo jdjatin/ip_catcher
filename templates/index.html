@@ -1,0 +1,39 @@
+<html>
+    <title>students info</title>
+    <body><center>
+        <h1>Students Information</h1>
+        <hr/>
+        <br>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Roll no.</th>
+                <th>Class</th>
+                <th>city</th>
+            </tr>
+            {% for n in Student%}
+            <td>
+                {{n.id}}
+            </td>
+            <td>
+                {{n.name}}
+            </td>
+            <td>
+                {{n.roll}}
+            </td>
+            <td>
+                {{n.Class}}
+            </td>
+            <td>
+                {{n.city}}
+            </td>
+
+            {% endfor %}
+        </table>
+
+
+
+
+    </body></center>
+</html>
